@@ -20,6 +20,8 @@ function Alert({
 }: React.PropsWithChildren & { onClose: () => void; isOpen: boolean }) {
 	if (!isOpen) return null;
 
+	if (Math.random() > 0.75) throw new Error("Bah");
+
 	return createPortal(
 		<div
 			onClick={onClose}
