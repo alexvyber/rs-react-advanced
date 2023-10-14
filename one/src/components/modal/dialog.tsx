@@ -7,6 +7,7 @@ export function DialogModal({
 	children,
 }: { isOpen: boolean; onClose: () => void } & React.PropsWithChildren) {
 	const dialogRef = useRef<React.ElementRef<"dialog">>(null);
+
 	useEffect(() => {
 		const dialog = dialogRef.current;
 		if (!dialog) return;

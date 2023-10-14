@@ -1,13 +1,20 @@
+import { useState } from "react";
 import "./App.css";
-import { ErrorBoundary } from "./components/error-boundaries";
-import { Modal } from "./components/modal";
-
-import { Portal } from "./components/portal";
+import { DatePicker } from "./components/datepicker";
+import { Using } from "./components/using-hook";
+import { CallbackShit } from "./components/use-callback-shit";
+// import { ErrorBoundary } from "./components/error-boundaries";
+// import { Modal } from "./components/modal";
+// import { Portal } from "./components/portal";
 
 function App() {
+	// const [value, setValue] = useState(new Date());
 	return (
 		<>
-			<ErrorBoundary
+			{/* <Using /> */}
+			<CallbackShit />
+			{/* <DatePicker value={value} onChange={setValue} /> */}
+			{/* <ErrorBoundary
 				fallback={
 					<>
 						SOme Error
@@ -18,7 +25,7 @@ function App() {
 			>
 				<Portal />
 				<Modal />
-			</ErrorBoundary>
+			</ErrorBoundary> */}
 		</>
 	);
 }

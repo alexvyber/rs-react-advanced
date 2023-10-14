@@ -8,8 +8,12 @@ export function Modal() {
 
 	return (
 		<>
-			<button onClick={() => setOpen(true)}>Show</button>
-			<button onClick={() => setDialogOpen(true)}>Show Dialog</button>
+			<button type="button" onClick={() => setOpen(true)}>
+				Show
+			</button>
+			<button type="button" onClick={() => setDialogOpen(true)}>
+				Show Dialog
+			</button>
 			<CustomModal isOpen={isOpen} onClose={() => setOpen(false)}>
 				Some Stufff
 			</CustomModal>
